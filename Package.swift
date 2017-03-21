@@ -3,7 +3,7 @@ import PackageDescription
 #if os(OSX)
     let gtkUrl = "https://github.com/TomasLinhart/CGtk-OSX"
 #elseif os(Linux)
-    let gtkUrl = "https://github.com/TomasLinhart/CGtk-Linux"
+    let gtkUrl = "https://github.com/bmdelacruz/CGtk-Linux"
 #else
     fatalError("Unsupported platform.")
 #endif
@@ -11,6 +11,6 @@ import PackageDescription
 let package = Package(
   name:  "SwiftGtk",
   dependencies: [
-    .Package(url: gtkUrl, majorVersion: 1, minor: 1)
+    .Package(url: gtkUrl, majorVersion: 1, minor: 2)
   ]
 )
