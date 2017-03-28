@@ -1,7 +1,7 @@
 import PackageDescription
 
 #if os(OSX)
-    fatalError("bmdelacruz: i do not have an OSX.")
+    let gtkUrl = "https://github.com/TomasLinhart/CGtk-OSX"
 #elseif os(Linux)
     let gtkUrl = "https://github.com/bmdelacruz/CGtk-Linux"
 #else
